@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
-export function SingIn(){
+export function Profile(){
     return(
         <Container>
-            SingIn
+            Profile
         </Container>
     )
 }

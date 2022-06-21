@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
-export function SingIn(){
+export function MoviePreview(){
     return(
         <Container>
-            SingIn
+            MoviePreview
         </Container>
     )
 }
