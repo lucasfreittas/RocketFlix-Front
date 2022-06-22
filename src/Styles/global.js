@@ -12,7 +12,7 @@ export default createGlobalStyle `
         -webkit-font-smoothing: antialiased;
     }
     body, input, button, textarea{
-        font-family: font-family: 'Roboto', serif;
+        font-family: 'Roboto Slab', serif;
         font-size: 16px;
         outline: none;
     }
