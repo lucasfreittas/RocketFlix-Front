@@ -46,4 +46,8 @@ export const Form = styled.div`
 
       margin-bottom: 50px;
     }
+
+    > Input{
+      margin-bottom: 10px;
+    }
 `;

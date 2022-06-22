@@ -1,4 +1,5 @@
 import { Container, Form, Photo } from './styles';
+import { FiMail, FiLock } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 
 import { Input } from '../../Components/Input'
@@ -11,7 +12,8 @@ export function SingIn(){
                 <p>Aplicação para acompanhar tudo que assistir.</p>
 
                 <h2>Faça seu login</h2>
-                <Input type='email' placeholder='E-mail' />
+                <Input type='email' icon={FiMail} placeholder='E-mail' />
+                <Input type='password' icon={FiLock} placeholder='Senha' />
             </Form>
 
             <Photo/>
