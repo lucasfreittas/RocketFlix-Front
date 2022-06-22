@@ -47,7 +47,11 @@ export const Form = styled.div`
       margin-bottom: 50px;
     }
 
-    > Button{
+    > button{
       margin-top: 25px;
+    }
+
+    .TextLink{
+      margin-top: 40px;
     }
 `;
