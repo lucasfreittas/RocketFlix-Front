@@ -3,6 +3,7 @@ import { FiMail, FiLock } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 
 import { Input } from '../../Components/Input'
+import { Button } from '../../Components/Button'
 
 export function SingIn(){
     return(
@@ -14,6 +15,7 @@ export function SingIn(){
                 <h2>Faça seu login</h2>
                 <Input type='email' icon={FiMail} placeholder='E-mail' />
                 <Input type='password' icon={FiLock} placeholder='Senha' />
+                <Button title='Entrar'/>
             </Form>
 
             <Photo/>
