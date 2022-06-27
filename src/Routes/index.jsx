@@ -5,7 +5,7 @@ import { LoginRoutes } from './login.routes';
 export function Routes(){
     return(
         <BrowserRouter>
-            <LoginRoutes />
+            <AppRoutes />
         </BrowserRouter>
     )
 }
