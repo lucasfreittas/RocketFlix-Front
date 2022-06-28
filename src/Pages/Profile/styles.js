@@ -29,9 +29,53 @@ export const Content = styled.div`
   width: 20%;
   align-self: center;
   margin: 0 auto;
+  margin-top: -300px;
 
-  > div:nth-child(2), div:nth-child(4){
+  > div:nth-child(3), div:nth-child(5){
     margin-bottom: 25px;
+  }
+
+`
+
+export const Avatar = styled.div`
+  position: relative;
+  margin: -124px auto 65px;
+
+  width: 186px;
+  height: 186px;
+
+  >img{
+    border-radius: 50%;
+    width: 186px;
+    height: 186px;
+  }
+
+  >label{
+    width: 48px;
+    height: 48px;
+    background-color: ${({theme}) => theme.COLORS.PINK};
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+
+    cursor: pointer;
+
+    input{
+      display: none;
+    }
+
+    svg{
+      width: 20px;
+      height: 20px;
+
+      color: ${({theme}) => theme.COLORS.BACKGROUND_GRAY};
+    }
   }
 
 `
