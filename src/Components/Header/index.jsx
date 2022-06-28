@@ -8,7 +8,7 @@ export function Header(){
             <Input type='text' placeholder='Pesquisar pelo título' />
 
             <Avatar>
-                
+
                 <div>
                     <p>Lucas Freitas</p>
                     <span>Sair</span>
@@ -20,3 +20,4 @@ export function Header(){
         </Container>
     )
 }
+

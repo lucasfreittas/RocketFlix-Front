@@ -10,6 +10,11 @@ export const Container = styled.button`
     padding: 0 16px;
     border-radius: 10px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
     font-weight: medium;
     font-size: 16px;
 `
