@@ -6,10 +6,12 @@ export function Note({icon: Icon, data, ...rest }){
     return(
         <Container {...rest}>
             <h1>{data.title}</h1>
+            <div>
                 {
                     data.stars.map(star => <Stars key={star.id} rate={star.rate}/>)
 
                 }
+            </div>
             <p>{data.description}</p>
             {
                 data.tags &&
