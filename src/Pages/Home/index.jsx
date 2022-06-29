@@ -1,8 +1,9 @@
 import { Container, Title, Content } from './styles';
 import { Header } from '../../Components/Header'
 import { Button } from '../../Components/Button';
-import {FiPlus, FiStar,} from 'react-icons/fi'
+import {FiPlus} from 'react-icons/fi'
 import { Note } from '../../Components/Note';
+
 
 export function Home(){
     return(
@@ -16,8 +17,19 @@ export function Home(){
             <Content>
                 <Note data={{
                     title: 'Elysium',
-                    stars: [<FiStar/>, <FiStar/>, <FiStar/>, <FiStar/>, <FiStar/>],
-                    description: 'Essa é uma descrição ficticia'
+                    stars: [
+                        {id: '1'},
+                        {id: '2'},
+                        {id: '3'},
+                        {id: '4'},
+                        {id: '5'},
+
+                    ],
+                    description: 'Essa é uma descrição ficticia',
+                    tags: [
+                        {id: '1', name:'React'},
+                        {id: '2', name:'RocketSeat'},
+                    ]
                     }}/> 
               
             </Content>
