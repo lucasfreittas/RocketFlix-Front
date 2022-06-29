@@ -18,11 +18,11 @@ export function Home(){
                 <Note data={{
                     title: 'Elysium',
                     stars: [
-                        {id: '1'},
-                        {id: '2'},
-                        {id: '3'},
-                        {id: '4'},
-                        {id: '5'},
+                        {id: '1', rate:'true'},
+                        {id: '2', rate:'true'},
+                        {id: '3', rate:'true'},
+                        {id: '4', rate:'true'},
+                        {id: '5', rate:'false'},
 
                     ],
                     description: 'Essa é uma descrição ficticia',

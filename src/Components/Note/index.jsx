@@ -7,8 +7,8 @@ export function Note({icon: Icon, data, ...rest }){
         <Container {...rest}>
             <h1>{data.title}</h1>
                 {
-                    data.stars.map(star => <Stars key={star.id}/>)
-                   
+                    data.stars.map(star => <Stars key={star.id} rate={star.rate}/>)
+
                 }
             <p>{data.description}</p>
             {

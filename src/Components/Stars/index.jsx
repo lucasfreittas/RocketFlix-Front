@@ -1,10 +1,10 @@
 import { Container } from './styles';
 import {FiStar} from 'react-icons/fi'
 
-export function Stars({...rest}){
+export function Stars({rate, ...rest}){
     return(
         <Container {...rest}>
-          <FiStar/>
+            {rate == 'true' ? <FiStar style={{fill: "red"}}/> : <FiStar/> }
         </Container>
     )
 };
