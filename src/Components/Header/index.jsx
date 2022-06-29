@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 export function Header(){
     return(
         <Container>
-            <h1>RocketMovies</h1>
+            <Link to='/'>
+                <h1>RocketMovies</h1>
+            </Link>
             <Input type='text' placeholder='Pesquisar pelo título' />
 
             <Avatar>

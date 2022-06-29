@@ -15,7 +15,7 @@ export const Container = styled.div`
 
     padding: 0 125px;;
 
-    >h1{
+    h1{
         font-size: 25px;
         font-weight: bold;
         color: ${({theme}) => theme.COLORS.PINK};
