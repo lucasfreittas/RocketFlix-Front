@@ -30,7 +30,7 @@ export const Avatar = styled.div`
     justify-content: center;
     align-items: center;
 
-    >img{
+    img{
         width: 65px;
         height: 65px;
         border-radius: 50%;
@@ -44,11 +44,13 @@ export const Avatar = styled.div`
     > div p {
         font-size: 15px;
         font-weight: bold;
+        cursor: default;
     }
 
     > div span{
         font-size: 15px;
         font-weight: normal;
         color: ${({theme}) => theme.COLORS.LIGHT_GRAY};
+        cursor: pointer;
     }
 `;

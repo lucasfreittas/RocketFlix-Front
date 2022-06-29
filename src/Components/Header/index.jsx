@@ -1,5 +1,6 @@
 import { Container, Avatar } from './styles';
 import { Input } from '../../Components/Input';
+import { Link } from 'react-router-dom';
 
 export function Header(){
     return(
@@ -13,9 +14,9 @@ export function Header(){
                     <p>Lucas Freitas</p>
                     <span>Sair</span>
                 </div>
-
-                <img src="https://github.com/lucasfreittas.png" alt="Foto do Usuário" />
-              
+                <Link to='/profile'>
+                    <img src="https://github.com/lucasfreittas.png" alt="Foto do Usuário" />
+                </Link>
             </Avatar>
         </Container>
     )

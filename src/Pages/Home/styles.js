@@ -29,5 +29,6 @@ export const Title = styled.div`
 export const Content = styled.div`
   grid-area: Content;
   padding: 0 123px;
+  overflow: auto;
 
 `;
