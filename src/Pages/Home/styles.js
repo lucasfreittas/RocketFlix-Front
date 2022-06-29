@@ -28,5 +28,6 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   grid-area: Content;
-  background-color: blue;
+  padding: 0 123px;
+
 `;
