@@ -5,7 +5,8 @@ import { Input } from '../../Components/Input';
 import { TextLink } from '../../Components/TextLink';
 import { TextArea } from '../../Components/TextArea';
 import { Button } from '../../Components/Button';
-import { Tags } from '../../Components/Tags';
+import { NewMarker } from '../../Components/NewMarker'
+
 import { FiArrowLeft } from 'react-icons/fi'
 
 export function CreateMovie(){
@@ -27,8 +28,13 @@ export function CreateMovie(){
                 </Movie>
 
                 <Markers>
-
+                    <h3>Marcadores</h3>
+                    <div className='tagContainer'>
+                        <NewMarker value='React' />
+                        <NewMarker isNew placeholder='Novo Marcador' />
+                    </div>
                 </Markers>
+
             </form>
         </Container>
     )
