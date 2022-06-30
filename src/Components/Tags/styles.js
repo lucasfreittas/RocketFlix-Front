@@ -13,5 +13,6 @@ export const Container = styled.div`
         filter: brightness(1.2);
         transform: scale(1.05);
         transition: all 200ms ease-in-out;
+        cursor: pointer;
     }
 `;
