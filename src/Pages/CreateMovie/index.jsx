@@ -1,4 +1,4 @@
-import { Container, Movie, Markers } from './styles';
+import { Container, Movie, Markers, Main } from './styles';
 import { Link } from 'react-router-dom';
 import { Header } from '../../Components/Header';
 import { Input } from '../../Components/Input';
@@ -13,29 +13,36 @@ export function CreateMovie(){
     return(
         <Container>
             <Header/>
-            <Link to='/'>
-                <TextLink icon={FiArrowLeft} title='Voltar'/>
-            </Link>
-            <form>
+                <Main>
+                    <Movie>
+                        <section className='link'>
+                            <Link to='/'>
+                                <TextLink icon={FiArrowLeft} title='Voltar'/>
+                            </Link>
+                        </section>
+                        <h1>Novo Filme</h1>
+                        <div>
+                            <Input type='Text' placeholder='Título' />
+                            <Input type='number' placeholder='Sua nota (de 0 a 5)' />
+                        </div>
+                            <TextArea placeholder='Oberservações' />
+                    </Movie>
 
-                <Movie>
-                    <h1>Novo Filme</h1>
-                    <div>
-                        <Input type='Text' placeholder='Título' />
-                        <Input type='number' placeholder='Sua nota (de 0 a 5)' />
-                        <TextArea placeholder='Oberservações' />
-                    </div>
-                </Movie>
+                    <Markers>
+                        <h3>Marcadores</h3>
+                        <div className='tagContainer'>
+                            <NewMarker value='React' />
+          
+                            <NewMarker isNew placeholder='Novo Marcador' />
+                        </div>
+                    
 
-                <Markers>
-                    <h3>Marcadores</h3>
-                    <div className='tagContainer'>
-                        <NewMarker value='React' />
-                        <NewMarker isNew placeholder='Novo Marcador' />
-                    </div>
-                </Markers>
-
-            </form>
+                        <section className='formButtons'>
+                            <Button title='Excluir Filme' />
+                            <Button title='Salvar Alterações' />
+                        </section>
+                    </Markers>
+                </Main>
         </Container>
     )
 }

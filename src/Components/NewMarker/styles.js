@@ -4,14 +4,14 @@ export const Container = styled.div`
 
     display: flex;
     align-items: center;
+    
 
     background-color: ${({theme, isNew}) => isNew ? 'transparent' : theme.COLORS.MEDIUM_GRAY};
     color: ${({theme, isNew}) => theme.COLORS.WHITE};
 
     border: ${({theme, isNew}) => isNew ? `1px dashed ${theme.COLORS.MEDIUM_GRAY}` : 'none'};
 
-    margin-bottom: 8px;
-    margin-top: 16px;
+
     border-radius: 10px;
     padding-right: 16px;
 
@@ -29,7 +29,7 @@ export const Container = styled.div`
 
         >input {
             height: 56px;
-            width: 100%;
+            
 
             padding: 12px;
 

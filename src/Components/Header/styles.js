@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     height: 115px;
+    grid-area: Header;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: ${({theme}) => theme.COLORS.LIGHT_GRAY};
