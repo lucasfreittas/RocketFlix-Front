@@ -4,6 +4,8 @@ import { TextLink } from '../../Components/TextLink';
 import { Stars } from '../../Components/Stars'; 
 import { Tags } from '../../Components/Tags';
 
+
+import { Link } from 'react-router-dom';
 import { FiArrowLeft, FiClock } from 'react-icons/fi'
 
 export function MoviePreview(){
@@ -12,16 +14,20 @@ export function MoviePreview(){
             <Header />
 
             <Content>
-                <TextLink icon={FiArrowLeft} title='Voltar' />
+                <section className='link'>
+                    <Link to='/'>
+                        <TextLink icon={FiArrowLeft} title='Voltar'/>
+                    </Link>
+                </section>
 
-                <header>
+                <div className='title'>
                     <h1>Interestellar</h1>
                     <Stars rate='true' />
                     <Stars rate='true' />
                     <Stars rate='true' />
                     <Stars rate='true' />
                     <Stars rate='false' /> 
-                </header>
+                </div>
 
                 <div className='author'>
                     <img src='https://github.com/lucasfreittas.png' alt='Foto do Usuário' />
